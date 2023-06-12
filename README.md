@@ -1,3 +1,4 @@
-# MO-IT101-DEXTERORAA
-Milestone #2
+# MO-IT101-ORAA-D.
+Terminal Assessment
+Final Code
 Submission
