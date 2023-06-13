@@ -50,6 +50,7 @@ public class attendance {
     }
     
     public double TimeIn() throws ParseException{
+    //THIS IS WHERE STRING TIME-IN IS BEING CONVERTED TO DOUBLE DATA TYPE
         _timeIn = hoursWorked[5];
         time1 = dateFormat.parse(_timeIn);
         timeOne = time1.getTime();
@@ -57,6 +58,7 @@ public class attendance {
     }
     
     public double TimeOut() throws ParseException{
+    //THIS IS WHERE STRING TIME-OUT IS BEING CONVERTED TO DOUBLE DATA TYPE
         _timeOut = hoursWorked[6];
         time2 = dateFormat.parse(_timeOut);
         timeTwo = time2.getTime();
@@ -64,6 +66,8 @@ public class attendance {
     }
     
     public double HoursWorked() throws ParseException{
+    //IF STATEMENT TO CORRECT THE TIME FOR HALFDAY,
+    //WITHOUT THIS LUNCH BREAK WILL BE INCLUDED TO HOURS WORKED WHEN LOGGED IN HALFDAY. 
             hours =  TimeOut()-TimeIn();
                 if(hours >=8 || hours > 4){
                     hours -= 1;
@@ -104,7 +108,7 @@ public class attendance {
                 _timeIn = hoursWorked[5];
                 _timeOut = hoursWorked[6];
 
-//                System.out.println();
+//                System.out.println(); //THESE SOUTS ARE JUST FOR TESTING IF THE DATES AND TIMEIN&OUT ARE CAPTURED CORRECTLY.
 //                System.out.println("Date: " + _date);
 //                System.out.println("Time In: " + _timeIn);
 //                System.out.println("Time Out: " + _timeOut);
@@ -113,7 +117,7 @@ public class attendance {
                 
             } 
         }
-        //System.out.println("\nTotal Hours Worked: " + FinalHW());
+        //System.out.println("\nTotal Hours Worked: " + FinalHW()); //ANOTHER TESTING SOUT TO SEE THE TOTAL HOURS WORKED.
         
         
     }
