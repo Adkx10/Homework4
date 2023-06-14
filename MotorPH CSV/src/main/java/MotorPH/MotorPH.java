@@ -59,10 +59,7 @@ public class MotorPH {
             System.out.println("Invalid Input..");
             System.out.print("Do you want to continue? (Y or N): ");
             choice = scan.nextLine();  
-        }
       }
-    
-    
-  }
-   
+    }
+  } 
 }
