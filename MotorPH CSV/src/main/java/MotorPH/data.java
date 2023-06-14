@@ -6,6 +6,7 @@ import com.opencsv.exceptions.CsvValidationException;
 import java.io.FileReader;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.text.DecimalFormat;
 
 public class data {
     
@@ -18,6 +19,7 @@ public class data {
     private double _phone;
     private double _cloth;
     private double _hrRate;
+    DecimalFormat df = new DecimalFormat("#,##0.00");
     
     
     
@@ -94,8 +96,19 @@ public class data {
                 _phone = Double.parseDouble(employeeData[15]);
                 _cloth = Double.parseDouble(employeeData[16]);
                 _hrRate = Double.parseDouble(employeeData[18]);
-                break;
-            }
+                
+                //SHOWS EMPLOYEE DETAILS
+                System.out.println();
+                System.out.println("Employee No.: " + EmployeeNo());
+                System.out.println("Employee Name: " + EmployeeFN() +" "+ EmployeeLN());
+                System.out.println("Birthday: " + EmployeeDOB());
+                System.out.println("Address: " + EmployeeAddress());
+                System.out.println("\n\tAllowance");
+                System.out.println("Rice Subsidy: " + df.format(RiceAllowance()));
+                System.out.println("Phone: " + df.format(PhoneAllowance()));
+                System.out.println("Cloth: " + df.format(ClothAllowance()));
+        break;
+            } 
                 
         }
         
