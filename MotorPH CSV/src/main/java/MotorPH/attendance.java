@@ -86,8 +86,6 @@ public class attendance {
     }
     
     
-    
-    
     //SETTER METHODS
     public void SetEmployeeNo(String EmployeeNo){
         _employeeNo = EmployeeNo;
@@ -108,17 +106,15 @@ public class attendance {
                 _timeIn = hoursWorked[5];
                 _timeOut = hoursWorked[6];
 
-//                System.out.println(); //THESE SOUTS ARE JUST FOR TESTING IF THE DATES AND TIMEIN&OUT ARE CAPTURED CORRECTLY.
-//                System.out.println("Date: " + _date);
-//                System.out.println("Time In: " + _timeIn);
-//                System.out.println("Time Out: " + _timeOut);
+                //System.out.println(); //THESE SOUTS ARE JUST FOR TESTING IF THE DATES AND TIMEIN&OUT ARE CAPTURED CORRECTLY.
+                //System.out.println("Date: " + _date);
+                //System.out.println("Time In: " + _timeIn);
+                //System.out.println("Time Out: " + _timeOut);
                 HoursWorked();
                 totalHours += gracePer;
                 
             } 
         }
         //System.out.println("\nTotal Hours Worked: " + FinalHW()); //ANOTHER TESTING SOUT TO SEE THE TOTAL HOURS WORKED.
-        
-        
     }
 }

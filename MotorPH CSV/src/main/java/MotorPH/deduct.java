@@ -81,6 +81,4 @@ public class deduct{
         System.out.println("Net Salary: " + df.format(_netPay));
         System.out.println("------------------------------------------------------------------------");
     }
-    
-    
 }
