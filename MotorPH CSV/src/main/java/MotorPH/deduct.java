@@ -79,7 +79,7 @@ public class deduct{
         double _netPay = taxableInc - withHoldingTax;
         System.out.println("\n\tSalary");
         System.out.println("Net Salary: " + df.format(_netPay));
-        System.out.println("\n------------------------------------------------------------------------");
+        System.out.println("------------------------------------------------------------------------");
     }
     
     

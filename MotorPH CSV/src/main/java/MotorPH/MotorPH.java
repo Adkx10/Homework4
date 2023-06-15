@@ -22,7 +22,6 @@ public class MotorPH {
         
         while(choice.equals("Y") || choice.equals("y")) {
         attendance hW = new attendance();
-        System.out.println("------------------------------------------------------------------------");
         System.out.print("\nEnter Employee No: ");
         String search = scan.nextLine();
         System.out.print("Enter Month: ");
