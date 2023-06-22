@@ -16,7 +16,7 @@ public class deduct{
     }
     
     public void Contributions() {
-        //SSS CONTRIBUTION COMPUTATION
+        //SSS CONTRIBUTION COMPUTATION   
         double sssContri = 0;
         if(_baseSalary == 0){
             sssContri = 0;

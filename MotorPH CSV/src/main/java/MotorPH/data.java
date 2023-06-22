@@ -103,12 +103,8 @@ public class data {
                 System.out.println("Employee Name: " + EmployeeFN() +" "+ EmployeeLN());
                 System.out.println("Birthday: " + EmployeeDOB());
                 System.out.println("Address: " + EmployeeAddress());
-                System.out.println("\n\tAllowance");
-                System.out.println("Rice Subsidy: " + df.format(RiceAllowance()));
-                System.out.println("Phone: " + df.format(PhoneAllowance()));
-                System.out.println("Cloth: " + df.format(ClothAllowance()));
-        break;
-            } 
+                break;
+            }
                 
         }
         
